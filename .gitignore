@@ -1,0 +1,39 @@
+# --- Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Private runtime data (never publish): long-term memories, chats, local DBs
+qdrant/
+conversation_history.json
+conversation_history.json.corrupt-*
+conversations/
+mem0_history.db
+*.sqlite
+*.db
+
+# --- Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Local safety backups and superseded scripts (kept on disk, not published)
+backups/
+main_backup.py
+main_before_final.py
+
+# --- Frontend tooling
+frontend/node_modules/
+frontend/*.tsbuildinfo
+frontend/dist/
+
+# --- OS / editor
+.DS_Store
+.vscode/
+.idea/
